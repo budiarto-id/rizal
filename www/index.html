@@ -49,6 +49,7 @@
 				<h1>di Media Pembelajaran</h1>
 				<h2>Kolonialisme dan Imperialisme Bangsa Eropa</h2>
 				<br/>
+					<a data-theme="b" href="#" onclick="VideoPlayer.play('file:///android_asset/www/video/apersepsi.mp4')" data-role="button" data-icon="flat-video">Video Apersepsi</a>
 				<a href="#home-page" data-theme="d"  data-role="button" data-inline="true">Masuk</a>
 		</div>
 				    
@@ -1316,5 +1317,11 @@
 			location.href = "index.html#home-page";
 		}	
 	</script>
+		<script type="text/javascript" charset="utf-8" src="video.js"></script>
+		<script type="text/javascript">
+			function playVideo(vidUrl) {
+				window.plugins.videoPlayer.play(vidUrl);
+			}
+		</script>
     </body>
 </html>
